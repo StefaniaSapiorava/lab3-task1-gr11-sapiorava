@@ -39,6 +39,13 @@ int main(int argc, char *argv[]) {
     printf("Нижний предел: %d\n", lowerLimit);
     printf("Верхний предел: %d\n", upperLimit);
 
+    for (int i = lowerLimit; i <= upperLimit; ++i) {
+        if (isHappyNumber(i)) {
+            printf("%d - счастливое число\n", i);
+            countHappyNumbers++;
+        }
+    }
+
     // Вывод результатов
     printf("Количество счастливых чисел: %d\n", countHappyNumbers);
 
